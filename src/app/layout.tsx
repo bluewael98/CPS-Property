@@ -5,8 +5,8 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Interno",
-  description: "Let your home be unique",
+  title: "CPS & Property Co.",
+  description: "Transforming Spaces, Renewing Beauty.",
 };
 
 export default function RootLayout({
