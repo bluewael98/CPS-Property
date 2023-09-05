@@ -29,7 +29,7 @@ const ContactUs = () => {
         <form
           target="_blank"
           onSubmit={onSubmit}
-          action="https://formsubmit.co/wael.business@outlook.com"
+          action="https://formsubmit.co/manager@ahrecruitment.com.au"
           method="POST"
         >
           <div className="flex md:flex-row flex-col justify-center items-center  gap-2 ">

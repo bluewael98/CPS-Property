@@ -3,42 +3,9 @@ import Link from "next/link";
 export default function Sidebar() {
   return (
     <div>
-      <div className="ss:w-[350px] w-[100%] ss:h-[400px] rounded-[50px] bg-navy px-2 ss:py-[76px] py-[38px] md:block hidden">
+      <div className="ss:w-[350px] w-[100%] ss:h-[400px] rounded-[50px] bg-navy px-2 ss:py-[76px] py-[38px] md:block hidden px-5">
         <div className="flex items-center mb-[30px]">
-          {/* Email Icon */}
-          <svg
-            className=" sm:w-[52px] w-[32px]"
-            width="52"
-            height="52"
-            viewBox="0 0 52 52"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g id="Icon">
-              <circle id="Ellipse 4" cx="26" cy="26" r="26" fill="white" />
-              <g id="Group 6">
-                <path
-                  id="Vector"
-                  d="M34.8846 18H17.1154C15.9471 18 15 18.9514 15 20.125V32.875C15 34.0486 15.9471 35 17.1154 35H34.8846C36.0529 35 37 34.0486 37 32.875V20.125C37 18.9514 36.0529 18 34.8846 18Z"
-                  stroke="#313B44"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  id="Vector_2"
-                  d="M18 21L26 28L34 21"
-                  stroke="#313B44"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </g>
-            </g>
-          </svg>
-          <p className="sm:ml-[15px] ml-[8px] p-md text-white">
-            name@outlook.com
-          </p>
+          <h3>Our details:</h3>
         </div>
 
         <div className="flex items-center mb-[30px]">
@@ -95,7 +62,7 @@ export default function Sidebar() {
               </g>
             </g>
           </svg>
-          <p className="sm:ml-[15px] ml-[8px] p-md">ahrecruitment.com.au</p>
+          <p className="sm:ml-[15px] ml-[8px] p-md">Sydney</p>
         </div>
       </div>
     </div>
