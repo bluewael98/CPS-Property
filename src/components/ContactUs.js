@@ -19,11 +19,10 @@ const ContactUs = () => {
   };
 
   return (
-    <section
-      id="contact"
-      className="flex flex-col justify-center items-center  font-Oswald text-xl"
-    >
-      <h1 className="text-navy">Contact us here!</h1>
+    <section className="flex flex-col justify-center items-center  font-Oswald text-xl">
+      <h1 id="Contact" className="text-navy">
+        Contact us here!
+      </h1>
       <div className="flex md:flex-row flex-col px-4 justify-center gap-10 items-center">
         <Sidebar />
         {/* CONTACT FORM */}

@@ -100,7 +100,7 @@ const Navbar = () => {
                       <ArrowForwardIosRounded className="text-primary" />
                     </Link>
                     <Link
-                      href="/Contact"
+                      href="/#Contact"
                       className=" border-b-[1px] w-full text-start flex justify-between items-center "
                       onClick={() => setIsMenuToggled(!isMenuToggled)}
                     >

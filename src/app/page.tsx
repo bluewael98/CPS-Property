@@ -13,13 +13,16 @@ export default async function HomePage() {
         <LeftRightWork />
       </section>
 
-      <section id="Contact" className="min-[380px]:pt-0 pt-10">
+      <section className="min-[380px]:pt-0 pt-[50px]">
         <ContactUs />
       </section>
-      <div className="w-screen bg-brown h-[100px] flex flex-col justify-center items-center">
-        <p>Copyright © 2023 CPS & Co. Property Services.</p>
-        <Image src="/CPSLOGO.png" alt="CPS" width={50} height={50} />
-      </div>
+
+      <section id="Map">
+        <div className="w-screen bg-brown h-[100px] flex flex-col justify-center items-center">
+          <p>Copyright © 2023 CPS & Co. Property Services.</p>
+          <Image src="/CPSLOGO.png" alt="CPS" width={50} height={50} />
+        </div>
+      </section>
     </div>
   );
 }
