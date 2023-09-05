@@ -95,7 +95,7 @@ export default function Sidebar() {
               </g>
             </g>
           </svg>
-          <p className="sm:ml-[15px] ml-[8px] p-md">www.website.com</p>
+          <p className="sm:ml-[15px] ml-[8px] p-md">ahrecruitment.com.au</p>
         </div>
       </div>
     </div>

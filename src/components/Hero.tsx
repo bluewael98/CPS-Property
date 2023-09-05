@@ -10,7 +10,7 @@ export default function Hero() {
     {
       image:
         "https://images.unsplash.com/photo-1603712725038-e9334ae8f39f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
-      title: "CPS & Property Co.",
+      title: "CPS & Co. Property Services",
       body: "Transforming Spaces, Renewing Beauty.",
       href: "/",
       buttonLabel: "Get in touch!",
@@ -19,7 +19,7 @@ export default function Hero() {
     {
       image:
         "https://images.unsplash.com/photo-1626379481874-3dc5678fa8ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "CPS & Property Co.",
+      title: "CPS & Co. Property Services",
       body: "Transforming Spaces, Renewing Beauty.",
       href: "/",
       buttonLabel: "Get in touch!",
@@ -67,9 +67,7 @@ export default function Hero() {
                     <h1 className="text-white flex  font-bold max-w-[450px] text-[65px]">
                       {blockData.title}
                     </h1>
-                    <h1 className="text-white flex  font-bold max-w-[450px] text-[45px]">
-                      Cleaning services.
-                    </h1>
+
                     <div className="max-w-[450px] max-h-[66px] italic">
                       <p>{blockData.body}</p>
                     </div>
@@ -99,11 +97,11 @@ export default function Hero() {
       </Splide>
 
       {/* Mobile hero section */}
-      {/* <Splide
+      <Splide
         options={{
           rewind: true,
           width: 1200,
-          height: 800,
+          height: 620,
           gap: "2rem",
           perPage: 1,
           autoplay: true,
@@ -112,7 +110,7 @@ export default function Hero() {
         }}
         className="min-[50px]:block xxxs:block xxs:block xs:block min-[530px]:hidden sm:hidden h-full w-full hidden"
       >
-        {blockData.heroImgMobile.data.map((slide: any, index: any) => (
+        {blockData.map((slide: any, index: any) => (
           <SplideSlide
             key={index}
             className="flex justify-center items-center py-10"
@@ -120,28 +118,28 @@ export default function Hero() {
             <div
               className="w-full"
               style={{
-                backgroundImage: `url(${slide.attributes.url})`,
+                backgroundImage: `url(${slide.image})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
               }}
             >
-              <div className="flex flex-col text-left xxs:px-12 xxxs:px-6 py-[150px] gap-[30px] z-[5]">
+              <div className="flex flex-col text-left xxs:px-12 xxxs:px-6 py-[150px] gap-[30px] z-[5] bg-black bg-opacity-60">
                 <div>
-                  <h1>{blockData.title}</h1>
+                  <h1>{slide.title}</h1>
                 </div>
                 <div className="max-w-[250px]">
-                  <p className="text-[18px]">{blockData.body}</p>
+                  <p className="text-[18px]">{slide.body}</p>
                 </div>
                 <div>
-                  <Link href={`/${blockData.button.href}`}>
+                  <Link href={`/${slide.href}`}>
                     <button
                       className={`font-Jost flex justify-center items-center rounded-[18px] bg-brown md:w-[220px] xs:w-[75xpx]
                         py-[18px] px-[39px] xxs:text-[18px] xxxs:text-[16px]`}
                     >
-                      {blockData.button.buttonLabel}
+                      {slide.button}
                       <Image
-                        className="ml-[10px]"
-                        src={blockData.button.icon.data.attributes.url}
+                        className="ml-[10px] "
+                        src={slide.icon}
                         width={19}
                         height={17}
                         alt="Button Icon"
@@ -153,7 +151,7 @@ export default function Hero() {
             </div>
           </SplideSlide>
         ))}
-      </Splide> */}
+      </Splide>
     </div>
   );
 }
