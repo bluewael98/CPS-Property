@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "CPS & Property Co.",
+  title: "CPS & Co.",
   description: "Transforming Spaces, Renewing Beauty.",
 };
 
