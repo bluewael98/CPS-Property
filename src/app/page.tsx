@@ -17,7 +17,7 @@ export default async function HomePage() {
         <ContactUs />
       </section>
       <div className="w-screen bg-brown h-[100px] flex flex-col justify-center items-center">
-        <p>Copyright © 2023 CPS & Property Co.</p>
+        <p>Copyright © 2023 CPS & Co. Property Services.</p>
         <Image src="/CPSLOGO.png" alt="CPS" width={50} height={50} />
       </div>
     </div>
