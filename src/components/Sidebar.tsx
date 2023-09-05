@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Sidebar() {
   return (
     <div>
-      <div className="ss:w-[350px] w-[100%] ss:h-[400px] rounded-[50px] bg-navy px-2 ss:py-[76px] py-[38px] md:block hidden px-5">
+      <div className="ss:w-[350px] w-[100%] ss:h-[400px] rounded-[50px] bg-navy  ss:py-[76px] py-[38px] md:block hidden px-5">
         <div className="flex items-center mb-[30px]">
           <h3>Our details:</h3>
         </div>
